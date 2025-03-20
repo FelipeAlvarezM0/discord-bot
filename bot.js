@@ -196,5 +196,6 @@ distube.on('addSong', (queue, song) => {
 });
 
 // ✅ Iniciar el bot
+console.log("Todas las variables de entorno:", process.env);
 console.log("TOKEN CARGADO:", process.env.TOKEN ? "✅ Sí" : "❌ No encontrado");
 client.login(process.env.TOKEN);
